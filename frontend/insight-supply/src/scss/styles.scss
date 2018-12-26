@@ -1,0 +1,83 @@
+@import "utilities/index";
+@import "vendor/index";
+@import "base/index";
+@import "~bootstrap/scss/bootstrap.scss";
+
+#nav {
+  padding: 15px 25px 10px 25px;
+  background-color: #FFFFFF;
+  a {
+    font-family: 'Nexa Light';
+    font-weight: light;
+    &.nav-link{
+      &.active {
+        color: $bg-accent;
+      }
+    }
+  }
+  img {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+html * {
+  font-family: "Nexa Light";
+  font-weight: light;
+  font-size: 1rem;
+  a {
+    color: black;
+  }
+}
+
+.page-title , h2 {
+  font-size: 2.5rem;
+  color: $bg-accent;
+}
+
+.carousel-slide {
+  width: 85vw; /* 90% of viewport vidth */
+  height: 50.625vw; /* ratio = 9/16 * 90 = 50.625 */
+  max-height: 90vh;
+  max-width: 160vh; /* 16/9 * 90 = 160 */
+  margin: auto;
+  position: absolute;
+  top:0;bottom:0;
+  left:0;right:0;
+  padding: 15px;
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTQuMTkgMTYuMDA1bDcuODY5IDcuODY4LTIuMTI5IDIuMTI5LTkuOTk2LTkuOTk3TDE5LjkzNyA2LjAwMmwyLjEyNyAyLjEyOXoiLz48L3N2Zz4=');
+  }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    overflow: hidden;
+    text-align: center;
+  h3 {
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    vertical-algin: center;
+  }
+  a {
+    color: #FFFFFF;
+    font-size: 1.75vw;
+  }
+}
+
+#category-list {
+  a {
+    color: black;
+  }
+}
+
+hr {
+  border:none;
+  border-top:3px dotted $bg-accent;
+  color:#FFFFFF;
+  background-color:#FFFFFF;
+  height:1px;
+  width:50%;
+}
